@@ -1,3 +1,43 @@
+
+
+    document.getElementById('displayDate').onclick = function() {
+        const now = new Date().toUTCString(); // Create a new Date object for the current date and time
+        const currentDate = now.slice(5, 16); // Format the date and time as a human-readable string
+
+        
+        document.getElementById('displayDate').innerHTML = currentDate; // Update the HTML element
+    };
+
+    
+
+
+
+//     // Get references to the button and the content div
+// const toggleButton = document.getElementById('toggleButton');
+// const contentToToggle = document.getElementById('contentToToggle');
+
+// // Add an event listener to the button
+// toggleButton.addEventListener('click', function() {
+//   // Check the current display style of the content
+//   if (contentToToggle.style.display === 'none') {
+//     // If hidden, show it (e.g., using 'block' for a div)
+//     contentToToggle.style.display = 'block';
+//     toggleButton.textContent = 'Hide Content'; // Update button text
+//   } else {
+//     // If visible, hide it
+//     contentToToggle.style.display = 'none';
+//     toggleButton.textContent = 'Show Content'; // Update button text
+//   }
+// });
+
+// Optionally, hide the content initially using CSS or JavaScript
+// contentToToggle.style.display = 'none'; // Uncomment to hide initially
+// function showData() {
+//     document.getElementById("date").innerHTML =  data();
+//   }
+  
+
+
 // Lecture 29
 
 
@@ -62,10 +102,10 @@
 //     document.getElementById('box').innerHTML ='<img src="https://www.shutterstock.com/image-photo/colorful-odd-number-on-white-260nw-1602605152.jpg" alt="">'
 // }
 
-let num =prompt("enter num")
- let text =  (num%2==0) ? "It is even": (num%2==1) ? 'it is odd' : 'Enter Correct Number'
+// let num =prompt("enter num")
+//  let text =  (num%2==0) ? "It is even": (num%2==1) ? 'it is odd' : 'Enter Correct Number'
 
- document.writeln(text)
+//  document.writeln(text)
 
 
 //  Lecture  30
@@ -127,6 +167,6 @@ let num =prompt("enter num")
 // document.writeln(Math.ceil(num) + Math.ceil(num1))
 
 
-let num = 3.9
+// let num = 3.9
 
-document.writeln(Math.floor(num))
+// document.writeln(Math.floor(num))
