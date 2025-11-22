@@ -1,12 +1,43 @@
 
 
-    document.getElementById('displayDate').onclick = function() {
-        const now = new Date().toUTCString(); // Create a new Date object for the current date and time
-        const currentDate = now.slice(5, 16); // Format the date and time as a human-readable string
+    
+
+    let sampledata = fetch('https://jsonplaceholder.typicode.com/posts')
+  .then(response => response.json())
+  .then(allData => {
+    // Select the target container once to improve performance
+    const demoElement = document.getElementById('demo');
+    if (!demoElement) {
+      console.error('Element with ID "demo" not found.');
+      return;
+    }
+
+    // Use map to generate an array of HTML strings
+    const htmlOutput = allData.map((post, index) => {
+      // Index starts at 0, so add 1 for a serial number starting at 1
+      const serialNumber = index + 1;
+      return `
+        <div class="inner">
+          <h1>${serialNumber}. ${post.title}</h1>
+          <h2>${post.body}</h2>
+        </div>
+      `;
+    }).join(''); // Join the array of strings into a single string
+
+    // Insert all the HTML into the DOM in a single operation
+    demoElement.innerHTML = htmlOutput;
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
+// document.getElementById('displayDate').onclick = function() {
+//         const now = new Date().toUTCString(); // Create a new Date object for the current date and time
+//         const currentDate = now.slice(5, 16); // Format the date and time as a human-readable string
 
         
-        document.getElementById('displayDate').innerHTML = currentDate; // Update the HTML element
-    };
+//         document.getElementById('displayDate').innerHTML = currentDate; // Update the HTML element
+//     };
+    
 
     
 

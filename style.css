@@ -1544,3 +1544,187 @@ input {
 
 /* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Libertinus+Keyboard&family=Story+Script&display=swap');
   */
+
+
+  /* ------------ GLOBAL NEWS THEME ------------ */
+
+
+   body {
+  background: #f5f7fa;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+#demo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Card design */
+.inner {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s forwards;
+  animation-delay: var(--delay);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover animation */
+.inner:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+}
+
+/* Title */
+.inner h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+/* Body text */
+.inner h2 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #555;
+}
+
+/* Fade-up animation */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(to bottom, #0a0f24, #121a3a, #1e295c);
+  color: white;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Grid layout */
+#demo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+/* ------------ NEWS CARD DESIGN ------------ */
+.innerNews {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  animation: fadeUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.innerNews:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5);
+}
+
+/* Image */
+#newsImg {
+  width: 100%;
+  height: 200px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* Author + Date row */
+.innerNews div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Title */
+.title {
+  font-size: 20px;
+  margin: 12px 0;
+  color: #ffdd57;
+  font-weight: bold;
+}
+
+/* Description */
+.description {
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+/* Learn More button */
+.learnMore {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 15px;
+  background: #ff4757;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.learnMore:hover {
+  background: #e84118;
+}
+
+/* Content text */
+.content {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+
+/* ------------ Fade Up Animation ------------ */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+/* ------------ FALLING EMOJIS EFFECT ------------ */
+.floating-emoji {
+  position: fixed;
+  top: -50px;
+  font-size: 30px;
+  opacity: 0.8;
+  pointer-events: none;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-50px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(120vh) rotate(360deg);
+  }
+}
