@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin: auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #input{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Multiplication Table Generator</h1>
+    <div id="input">
+    <label for="numberInput">Enter a number:</label>
+    <input type="number" id="numberInput" value="12">
+    <button onclick="generateTable()">Generate Table</button>
+    </div>
+    <div id="tableContainer">
+        <!-- The multiplication table will be inserted here by JavaScript -->
+    </div>
+
+    <script src="tables.js"></script>
+</body>
+</html>
