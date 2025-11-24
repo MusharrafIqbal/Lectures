@@ -1,0 +1,189 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+/*
+.card{
+    padding: 10px;
+    box-shadow: 0 0  30px 10px black;
+    font-family: cursive;
+    width: 22%;
+    margin: 100px auto;
+}
+#cardheader{
+    border-bottom: 5px solid red;
+}
+#cardbody {
+    border-bottom: 5px solid red;
+    padding-bottom: 5%;
+}
+ul .list-item{
+    list-style: none;
+    height: 30px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgba(128, 128, 128, 0.421);
+}
+button , input{
+    background-color: olive;
+    box-shadow:  0  0 10px 4px black;
+    color: white;
+    padding: 10px;
+    border: none;
+    
+    
+} */
+
+input{
+    background-color: rgba(247, 240, 240, 0.808);
+    outline: none;
+    color: black;
+    margin-top: 5%;
+    margin-right: 20px;
+    border-radius: 5px;
+    min-height: 30px;
+    box-shadow:  0  0 5px 1px rgb(59, 54, 54);
+    text-align: center;
+
+
+}
+
+/* .form{
+    
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    margin: auto;
+
+} */
+
+/* .inner-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+} */
+div li{
+    list-style: none;
+    margin-top: 10px;
+    
+}
+
+label{
+    padding-right: 50px;
+}
+h1{
+    min-width: 500px;
+    min-height: 45px;
+    background-color:grey;
+    color:lightgrey;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid black;
+
+}
+
+
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    width: 100%;
+    margin-top: 10PX;
+    background-color: rgba(247, 240, 240, 0.808);
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 700px;
+    padding-top: 20px;
+}
+.border{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom: 0.2px solid;
+}
+
+.task  {
+    display: flex;
+    justify-content: flex-end;
+    background-color: lightgrey;
+    
+
+}
+
+.form button{
+    margin: auto;
+    margin-top: 20px;
+    min-width: 100px;
+    border-radius: 10px;
+    min-height: 30px;
+    text-align: center;
+    
+
+}
+
+.buttons    {
+    display: flex;
+    margin-top: 10px;
+    border-radius: 10px;
+    min-height: 30px;
+    text-align: center;
+    
+    
+
+}
+
+
+.buttons button{
+    min-width: 100px;
+    border-radius: 10px;
+    
+    
+    
+    
+}
+
+.side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    width: 20%;
+    padding-top: 20px;
+    
+
+    
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    width: 500px;
+    height: 70px;
+    
+    
+}
+ul  li{
+
+    min-width: 200px;
+    min-height: 35px;
+    border: 0.5px solid;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    
+    
+    
+}
