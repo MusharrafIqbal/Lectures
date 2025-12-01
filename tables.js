@@ -8,12 +8,12 @@ function generateTable() {
     }
 
     let tableHTML = '<table>';
-    tableHTML += '<thead><tr><th>Factor</th><th>x</th><th>Number</th><th>=</th><th>Result</th></tr></thead>';
+    tableHTML += '<thead><tr><th>Factor</th><th>X</th><th>Number</th><th>=</th><th>Result</th></tr></thead>';
     tableHTML += '<tbody>';
 
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= 20; i++) {
         const result = number * i;
-        tableHTML += `<tr><td>${number}</td><td>x</td><td>${i}</td><td>=</td><td>${result}</td></tr>`;
+        tableHTML += `<tr><td>${number}</td><td>X</td><td>${i}</td><td>=</td><td>${result}</td></tr>`;
     }
 
     tableHTML += '</tbody></table>';
