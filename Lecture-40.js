@@ -34,16 +34,16 @@
 
 // document.querySelector('li').style.color  = 'pink'
 
-let a = document.querySelectorAll('#title')[0]
-a.style.textShadow = '0 0  10px purple'
+// let a = document.querySelectorAll('#title')[0]
+// a.style.textShadow = '0 0  10px purple'
 
 
-for(i=0;i<=3;i++){
+// for(i=0;i<=3;i++){
 
-let list = document.querySelectorAll('li')[i]
-list.style.textShadow = '0 0 10px green'
+// let list = document.querySelectorAll('li')[i]
+// list.style.textShadow = '0 0 10px green'
 
-}
+// }
 
 // function sbt(){
 //     let text = document.getElementById('text').value   
@@ -51,10 +51,42 @@ list.style.textShadow = '0 0 10px green'
 // }
 
 
+// let btn = document.getElementById('btn')
+
+// btn.addEventListener('click' , function(){
+//     let text = document.getElementById('text').value   
+      
+//     document.getElementById('result').innerHTML = text 
+// })
+
+
+// for (let i = 1; i <= 100; i++) {
+//   document.write("  -  ",i,"  -  ");
+// }
+
+// function sbt(){
+//     let text = document.getElementById('addName').value
+//     let empty = document.writeln=""
+
+//     document.getElementById('getName').innerHTML = text
+//     document.getElementById('addName').innerHTML = empty
+// }
+
+
 let btn = document.getElementById('btn')
 
 btn.addEventListener('click' , function(){
-    let text = document.getElementById('text').value   
-      
-    document.getElementById('result').innerHTML = text 
+    let text = document.getElementById('addName').value  
+
+    document.getElementById('getName').innerHTML = text 
+    document.getElementById('addName').innertext = "..fff." 
 })
+
+// function sbt(){
+//     let text = document.getElementById('addName').value
+//     let empty = document.writeln=""
+
+//     document.getElementById('getName').innerHTML = text
+//     document.getElementById('addName').innerHTML = empty
+// }
+

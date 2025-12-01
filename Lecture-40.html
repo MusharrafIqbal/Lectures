@@ -35,15 +35,15 @@
 
     <div class="side">
     <div class="buttons">
-        <button>Add Details</button>
-        <button style="display: none;">Close Form</button>
+        <button id="details">Add Details</button>
+        <button id="close" style="display: none;">Close Form</button>
     </div>
 
     <div class="form">
         <div class="inner-form">
             <li>
                 <form action="">Name: </form>
-                <form action=""><input type="text"></form>
+                <form action=""><input type="text" id="addName"></form>
             </li>
         </div>
 
@@ -66,7 +66,7 @@
                 <form action=""><input type="number"></form>
             </li>
         </div>
-        <center> <button>Submit</button></center>
+        <center> <button id="btn" onclick="click()">Submit</button></center>
     </div>
     </div>
 
@@ -82,7 +82,7 @@
             
             <ul>
                 <li style="border-top-left-radius: 25px; border-bottom-left-radius: 0px;">Name:</li>
-                <li style="border-top-right-radius: 25px; border-bottom-right-radius: 0px;">afdasdf</li>
+                <li id="getName" style="border-top-right-radius: 25px; border-bottom-right-radius: 0px;"></li>
             </ul>    
             <ul>
                 <li style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">Address:</li>
@@ -95,7 +95,10 @@
             <ul class="border">
                 <li style="border-top-left-radius: 0px; border-bottom-left-radius: 25px;">Contact:</li>
                 <li style="border-top-right-radius: 0px; border-bottom-right-radius: 25px;">afsdfasd</li>
-            </ul>        
+            </ul>    
+            
+            
+
                 
             
                 
@@ -105,9 +108,10 @@
         </div>
 
     </div>
+</div>
 
 
 
-    <script src="Lecture-40.js"></script>
+    <script src="/Lectures/Lecture-40.js"></script>
 </body>
 </html>
